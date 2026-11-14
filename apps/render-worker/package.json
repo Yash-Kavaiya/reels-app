@@ -1,0 +1,33 @@
+{
+  "name": "@reelcraft/render-worker",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "render:sample": "tsx src/cli.ts",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "worker": "tsx src/worker.ts",
+    "dev": "tsx src/worker.ts",
+    "reel": "tsx src/enqueue.ts"
+  },
+  "dependencies": {
+    "@reelcraft/project": "workspace:*",
+    "@reelcraft/templates": "workspace:*",
+    "@remotion/bundler": "4.0.532",
+    "@remotion/renderer": "4.0.532",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "remotion": "4.0.532",
+    "@reelcraft/db": "workspace:*",
+    "@anthropic-ai/sdk": "^0.131.0",
+    "zod": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.2.0",
+    "tsx": "^4.23.0",
+    "typescript": "^5.9.0",
+    "vitest": "^3.2.0"
+  }
+}
